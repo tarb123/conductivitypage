@@ -1,0 +1,90 @@
+.about-us {
+    background-color: #ffffff;
+    color: #000000;
+    padding: 100px;
+    border-radius: 8px;
+}
+
+ul {
+    color: #0a3371;
+    text-align: center;
+}
+
+h1, p {
+    color: #990000;
+    text-align: center;
+}
+
+p {
+    color: #010101;
+    text-align: left;
+}
+
+.left-ahead {
+    color: #003366;
+    text-align: left;
+}
+
+.service-container {
+    background-color: rgb(252, 252, 252);
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 20px 0;
+}
+
+.service-box {
+    background-color: #e6f3ff;
+    border-radius: 15px;
+    padding: 20px;
+    margin: 10px;
+    flex: 1 1 200px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    opacity: 0;
+    transform: translateX(-100%);
+    animation: slide-in 2s forwards;
+}
+
+.service-box h2 {
+    color: #9b0000;
+    margin-bottom: 10px;
+}
+
+.service-box p {
+    color: black;
+    font-size: 14px;
+}
+
+/* Slider Animation */
+@keyframes slide-in {
+    from {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Adding delay for each service-box to appear one by one */
+.service-box:nth-child(1) {
+    animation-delay: 0s; /* No delay for the first box */
+}
+
+.service-box:nth-child(2) {
+    animation-delay: 1s; /* 2 seconds delay for the second box */
+}
+
+.service-box:nth-child(3) {
+    animation-delay: 2s; /* 4 seconds delay for the third box */
+}
+
+.service-box:nth-child(4) {
+    animation-delay: 3s; /* 6 seconds delay for the fourth box */
+}
+
+.service-box:nth-child(5) {
+    animation-delay: 4s; /* 8 seconds delay for the fifth box */
+}

@@ -1,0 +1,25 @@
+.career-page, .personality-test {
+    background-color: #e6f3ff; /* Light blue background */
+    color: #003366;            /* Dark blue text */
+    padding: 100px;
+    border-radius: 8px;
+}
+
+h1 {
+    color:hsl(0, 100%, 30%);
+    text-align: center;
+}
+
+.job-list, .quiz-questions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.application-form, form {
+    background-color: white;
+    padding: 15px;
+    /* border: 1px solid #cce6ff; */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 51, 102, 0.1);
+}
